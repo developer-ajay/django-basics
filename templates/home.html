@@ -30,7 +30,7 @@
                 {% for e in employees %}
                     <tr>
                         <th scope="row">{{ forloop.counter}}</th>
-                        <td>{{ e.first_name }}</td>
+                        <td><a href="{% url 'employeeDetails' e.id %}">{{ e.first_name }}</a></td>
                         <td>{{ e.last_name }}</td>
                         <td>{{ e.designation }}</td>
                     </tr>
