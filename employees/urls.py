@@ -4,6 +4,6 @@ from employees import views
 
 
 urlpatterns = [
-    path('', views.home),
+    path('list/', views.home),
 
 ]
